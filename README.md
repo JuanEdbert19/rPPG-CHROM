@@ -38,13 +38,16 @@ The model is benchmarked using 3 videos chosen randomly from the UBFC-rPPG Datas
 
 Subject         | Valid Frames | MAE (BPM)  | MAPE (%)
 -----------------------------------------------------------------
-subject1        | 1344         | 7.84       | 7.51%
-subject12       | 1787         | 4.14       | 6.35%
-subject23       | 1757         | 5.93       | 9.21%
+subject1      	| 1344 frames        | 7.84 BPM      | 7.51%
+
+subject12       | 1787 frames        | 4.14 BPM      | 6.35%
+
+subject23       | 1757 frames        | 5.93 BPM      | 9.21%
 
 FINAL RESULTS
 -----------------------------------------------------------------
 Total Mean Absolute Error (MAE):  5.97 BPM
+
 Total Mean Abs Percentage Error:  7.69%
 
 ### Analysis 
