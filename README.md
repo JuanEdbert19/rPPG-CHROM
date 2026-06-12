@@ -1,3 +1,11 @@
+## How to run
+1. Create a virtual environment
+2. Activate that virtual environment and select it as your notebook kernel
+2. Open main.ipynb and run all cells
+
+NOTE: the benchmarking function is currently commented out since in order to run this function, you will need to have the public video dataset to be available locally. Therefore, only the live webcam demo is available right now. If you want to have the benchmarking function, you would need to download the individual "subject" folders from https://www.kaggle.com/datasets/malekdinarito/ubfc-rppg-dataset?select=subject1 and put them in the same folder as main.ipynb.
+
+
 rPPG (Remote Photoplethysmography) is a method of measuring heartrate using the imperceptible color changes in the human skin. The idea is hemoglobin absorbs certain lights more, from this we can detect the heart cycles. 
 
 ### Traditional Approach
@@ -38,18 +46,17 @@ The model is benchmarked using 3 videos chosen randomly from the UBFC-rPPG Datas
 
 Subject         | Valid Frames | MAE (BPM)  | MAPE (%)
 -----------------------------------------------------------------
-subject1      	| 1344 frames        | 7.84 BPM      | 7.51%
+subject1      	| 1344 frames        | 4.36 BPM      | 4.00%
 
-subject12       | 1787 frames        | 4.14 BPM      | 6.35%
+subject12       | 1787 frames        | 3.41 BPM      | 5.22%
 
-subject23       | 1757 frames        | 5.93 BPM      | 9.21%
+subject23       | 1757 frames        | 4.93 BPM      | 7.78%
 
 FINAL RESULTS
 -----------------------------------------------------------------
-Total Mean Absolute Error (MAE):  5.97 BPM
+Total Mean Absolute Error (MAE):  4.24 BPM
 
-Total Mean Abs Percentage Error:  7.69%
-
+Total Mean Abs Percentage Error:  5.67%
 ### Analysis 
 The benchmark results align with my initial hypothesis about this model's main disadvantage, which is sensitivity to environmental changes. Through looking at each videos individually, "subject23" moves their head a lot. These micro movements momentarily changes the colour of the skin shadows. Therefore, measurements are more unpredictable in these cases.
 
