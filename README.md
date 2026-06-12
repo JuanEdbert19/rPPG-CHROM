@@ -5,7 +5,7 @@
 
 NOTE: the benchmarking function is currently commented out since in order to run this function, you will need to have the public video dataset to be available locally. Therefore, only the live webcam demo is available right now. If you want to have the benchmarking function, you would need to download the individual "subject" folders from https://www.kaggle.com/datasets/malekdinarito/ubfc-rppg-dataset?select=subject1 and put them in the same folder as main.ipynb.
 
-
+## What is rPPG
 rPPG (Remote Photoplethysmography) is a method of measuring heartrate using the imperceptible color changes in the human skin. The idea is hemoglobin absorbs certain lights more, from this we can detect the heart cycles. 
 
 ### Traditional Approach
